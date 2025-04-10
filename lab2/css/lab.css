@@ -4,6 +4,26 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #a2081f;
+    border: solid 1px #ffffff;
+    background-color: #cdcdf4;
+  }
+
+  h1 {
+    color: purple;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 25px;
+    font-size: large;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+
+  #content {
+    background-color: #bd97ff;
   }
