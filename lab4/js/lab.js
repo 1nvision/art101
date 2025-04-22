@@ -1,6 +1,18 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Cookie Clicker
+// Author: Collin Savall
+// Date: 4/21/2025
+
+//Display image of cookie
+//Display cookie counter
+//When user clicks cookie:
+  //Make the cookie shrink, then enlarge back to original size
+  //Increase Cookie Counter by 1
+//When user makes an upgrade purchase:
+  //Subtract price of upgrade from Cookie Counter
+  //Increase multiplier of cookie clicker
+//Earn achievements
+
+
 
 // Constants
 

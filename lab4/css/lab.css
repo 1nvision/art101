@@ -7,3 +7,11 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  p {
+    font-size: 18px;
+  }
+
+  li {
+    font-size: 20px;
+  }
