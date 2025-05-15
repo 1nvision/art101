@@ -1,6 +1,6 @@
-// index.js - Libraries and jQuery
+// index.js - JavaScript for the Web
 // Author: Collin Savall
-// Date: 5/12/2025
+// Date: 5/15/2025
 
 
 function generateRandomText() {
