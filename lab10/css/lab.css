@@ -1,0 +1,46 @@
+/* Style for text bubbles */
+.text p {
+  display: inline-block;
+  max-width: 60%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: darkgray;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
+/* Additional styling for structure */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f0f0f0;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+#output {
+  margin-top: 20px;
+  min-height: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
