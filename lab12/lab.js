@@ -5,6 +5,8 @@
 function sortingHat(str) {
     let length = str.length;
     let mod = length % 4;
+//Attributions: House descriptions are based off of this website: 
+//https://www.harrypotter.com/news/discover-your-hogwarts-house-on-wizarding-world
 
     if (mod === 0) {
         return "Gryffindor: you're the type of person who likes to stand up for the little guy, challenges authority, has a tendency to act first and think later, is known as a class clown and takes board games very seriously";
