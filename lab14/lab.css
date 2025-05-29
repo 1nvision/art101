@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000b53;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2em;
+    color: #a6a6a6;
+}
+
+.controls {
+    background-color: #b0fff7;
+    padding: 20px;
+    border: 1px solid #110071;
+}
+
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+input[type="number"], input[type="text"] {
+    width: 80px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0800ec;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #750000;
+}
+
+.output-box {
+    margin-top: 2px;
+    background: #fff;
+    padding: 20px;
+    column-width: 200px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+
+

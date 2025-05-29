@@ -4,24 +4,37 @@
 
 // Constants
 
-// Functions
-function sortUserName()  {
-    var userName = window.prompt("Please tell me your name so I can fix it.");
-    console.log("userName =", userName);
-    //splitting string into array
-    var nameArray = userName.split('');
-    console.log("nameArray =", nameArray);
-    //sorting the array
-    var nameArraySort = nameArray.sort();
-    console.log("nameArraySort =", nameArraySort);
-    //joining the array back into a string
-    var nameSorted = nameArraySort.join('');
-    console.log("nameSorted =", nameSorted);
 
-    return nameSorted;  
-
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
-//output
-document.writeln("I have now fixed your name: ", 
-    sortUserName(), "</br>");
+function capitalize(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+}
+
+function processUserName(name) {
+    let cleanName = name.replace(/\s+/g, '').toLowerCase();
+
+    let nameArray = cleanName.split('');
+    let shuffledArray = shuffleArray(nameArray);
+
+    let shuffledName = shuffledArray.join('');
+    return capitalize(shuffledName);
+}
+
+$(document).ready(function () {
+    const userName = window.prompt("Please tell me your name so I can fix it.");
+    
+    if (userName) {
+        const fixedName = processUserName(userName);
+
+        $("#output").html(`<div class="name-output">Your name is now fixed and perfect: ${fixedName}</div>`);
+    } else {
+        $("#output").html(`<div class="name-output">You didn't enter a name!</div>`);
+    }
+});
