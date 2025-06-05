@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 16 - JSON and APIs</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="../lab16/lab.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="../lab16/lab.js" defer></script>
+
+</head>
+<body>
+	<main id="content">
+		<section>
+			<h1>Lab 16 - JSON and APIs</h1>
+			<div id="challenge">
+					<h2>Challenge</h2>
+                    <p>Our challenge is to use the XKCD API to retrieve and display a random comic using jQuery and JSON.</p>
+			</div>
+
+			<div id="problems">
+					<h2>Problems</h2>
+                    <p>The biggest challenge was dealing with CORS errors when trying to fetch data from the XKCD API using AJAX. The browser blocked the request because the API didn't allow cross-origin access. I resolved this by using a public CORS proxy to successfully load the data.</p>
+                </div>
+
+			<div id="results">
+					<h2>Reflection</h2>
+					<p>This lab helped me better understand how APIs work in the browser and how to handle issues like CORS. I practiced using jQuery's AJAX functions to load external data, parse JSON, and dynamically update the page with comic images and info from XKCD.</p>
+			</div>
+
+			<div id="result">
+              <h2>Results</h2>
+                <button id="activate">Funny time!</button>
+                <div id="output"></div>
+		</section>
+		<nav id="links">
+		</nav>
+	</main>
+</body>
+</html>
