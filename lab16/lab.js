@@ -1,8 +1,7 @@
-/*
- * Author: Your Name
- * Lab 16: XKCD API
- * Description: Uses AJAX and jQuery to fetch and display an XKCD comic.
- */
+// index.js - API's and AJAX
+// Author: Collin Savall
+// Date: 6/2/2025
+
 
 $("#activate").click(function() {
   $.ajax({
@@ -12,14 +11,13 @@ $("#activate").click(function() {
     success: function(comicObj) {
       console.log("Success:", comicObj);
 
-      // Build comic content
+      // build comic
       let comicTitle = $("<h3>").text(comicObj.title);
       let comicImage = $("<img>")
         .attr("src", comicObj.img)
         .attr("alt", comicObj.alt)
         .attr("title", comicObj.alt);
 
-      // Output to the page
       $("#output").empty().append(comicTitle, comicImage);
     },
     error: function (jqXHR, textStatus, errorThrown) {
